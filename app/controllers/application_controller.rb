@@ -10,7 +10,7 @@ class App < Sinatra::Base
   end 
   
   post '/teams' do
-    # p params
+    p params
     @team = Team.new(team_name: params["team"]["name"], motto:  params["team"]["motto"], hereos:  params["team"]["heroes"])
     P @team.team_name
     erb :team
