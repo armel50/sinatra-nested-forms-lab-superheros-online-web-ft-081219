@@ -9,7 +9,7 @@ class App < Sinatra::Base
     erb :super_hero
   end 
   
-  post '/' do
+  post '/teams' do
     # p params
     @team = Team.new(team_name: params["team"]["name"], motto:  params["team"]["motto"], hereos:  params["team"]["heroes"])
     P @team.team_name
