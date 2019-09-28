@@ -1,6 +1,6 @@
 <h1><%= @team["team"]["name"] %></h1>
 <h1>Team Moto: <%= @team["team"]["motto"] %> </h1>
-<% @team["team"]["name"]  do |hero| %>
+<% @team["team"]["heroes"].each  do |hero| %>
 
 <h1>Hero Name:<%= hero["name"] %></h1>
 <p>Hero Power: <%=hero["power"] %></p>
