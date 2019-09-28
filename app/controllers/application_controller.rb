@@ -12,7 +12,7 @@ class App < Sinatra::Base
   post '/teams' do
     @team = params
   
-    P @team.team_name
+   
     erb :team
   end
 
